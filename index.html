@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biblioteca A Casa dos Filhos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Biblioteca - A Casa dos Filhos</h2>
+      <img src="casa dos filhos sem fundo.png">
+      <hr />
+      <br />
+      <div class="form">
+        Código: <input type="text" name="RollNo" id="roll" /> <br /><br />
+        Título:&nbsp; <input type="text" name="name" id="name" /> <br /><br />
+        Subtítulo: <input type="text" name="gender" id="gender" /> <br /><br />
+        Autor: <input type="text" name="Address" id="address" /> <br /><br />
+        Editora: <input type="text" name="edit" id="edit" /> <br /><br />
+        Quant.de Exemplares: <input type="text" name="quant" id="quant" /> <br /><br />
+        Empréstimo ou Consulta: <input type="text" name="emp" id="emp" /> <br /><br />
+        Pertence: <input type="text" name="pert" id="pert" /> <br /><br />
+      </div>
+
+      <div class="buttons">
+        <button id="insert">Inserir</button>
+        <button id="read">Pesquisar</button>
+        <button id="update">Atualizar</button>
+        <button id="delete">Excluir</button>
+      </div>
+      <table id="studentTable">
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Título</th>
+            <th>Subtítulo</th>
+            <th>Autor</th>
+            <th>Editora</th>
+            <th>Quantidade de Exemplares</th>
+            <th>Empréstimo</th>
+            <th>Pertence</th>
+          </tr>
+        </thead>
+        <tbody id="studentTableBody">
+          <!-- Dados da tabela serão inseridos aqui -->
+        </tbody>
+      </table>      
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js"></script>
+
+    <script src="fireConfig.js"></script>
+
+    <script src="myscript.js"></script>
+  </body>
+</html>
